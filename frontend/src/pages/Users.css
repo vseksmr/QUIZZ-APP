@@ -1,0 +1,86 @@
+.users-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+    color: white;
+    transition: padding 0.3s;
+  }
+  @media (max-width: 900px) {
+    .users-container {
+      max-width: 100%;
+      padding: 16px 0 0 0;
+    }
+  }
+  
+  .users-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #ddd;
+  }
+  
+  .user-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  .user-card {
+    background-color: #2f2f38;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .user-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .user-avatar {
+    background-color: #4a90e2;
+    color: white;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  .user-details h3 {
+    margin: 0;
+    color: #fff;
+  }
+  
+  .status {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .status.online {
+    color: #4caf50;
+  }
+  
+  .status.offline {
+    color: #ff4d4f;
+  }
+  
+  .role {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .role.admin {
+    color: #ffd700;
+  }
+  
+  .role.user {
+    color: #aaa;
+  }
+  

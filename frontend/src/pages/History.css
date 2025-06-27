@@ -1,0 +1,126 @@
+.history-container {
+  width: 100%;
+  max-width: 900px;
+  background: linear-gradient(to bottom right, #2d2d44, #1f1f2e);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  margin: 40px auto;
+  padding: 40px;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeIn 0.8s ease;
+}
+
+.history-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #77bfff;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2f2f3f;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.history-table th {
+  background: #4a90e2;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.history-table td {
+  padding: 16px;
+  border-bottom: 1px solid #444;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.history-table tr:hover td {
+  background-color: #3a3a4d;
+  transform: translateX(4px);
+  cursor: pointer;
+}
+
+.history-table tr:nth-child(even) {
+  background-color: #353545;
+}
+
+
+.history-table tr:hover {
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.history-table tbody tr {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 0.5s forwards ease-in-out;
+}
+
+.history-table tbody tr:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.history-table tbody tr:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.history-table tbody tr:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.history-table tbody tr:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.history-table tbody tr:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.history-table tbody tr:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.history-table tbody tr:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.history-table tbody tr:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
+.history-table tbody tr:nth-child(9) {
+  animation-delay: 0.9s;
+}
+
+.history-table tbody tr:nth-child(10) {
+  animation-delay: 1s;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
