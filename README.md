@@ -36,12 +36,3 @@ This is a full-stack web application that allows users to register, log in, and 
 - JPA + MySQL
 
 ---
-
-## Getting Started
-
-### 1. Frontend
-
-```bash
-cd frontend
-npm install
-npm start
